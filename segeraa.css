@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;600&display=swap');
+
+.segera {
+    display: block;
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+    color: #333;
+    margin: auto;
+    width: 100%;
+}
+
+img {
+    width: 400px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #0072e4;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #0072e4;
+    padding: 5px;
+    font-family: 'poppins', sans-serif;
+}
+
+a:hover {
+    background-color: #0072e4;
+    color: white;
+}

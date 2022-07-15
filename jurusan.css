@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+/* Sticky Navbar */
+/* .nav.sticky {
+    height: 100px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.248);
+    color: #837e7e;
+    background-color: #fff;
+} */
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    position: fixed;
+    /* padding-right: 20px; */
+    right: 0;
+    left: 0;
+    align-items: center;
+    height: 85px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.8s;
+    background-color: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.174);
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    overflow: hidden;
+    font-size: 20px;
+    padding: 4px;
+    font-family: 'open sans';
+    color: #333;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8em;
+    height: 20px;
+    padding: 0 15px 5px 0;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-family: 'open sans', sans-serif;
+    transition: 0.4s;
+}
+
+.nav ul li a:hover {
+    color: rgb(29, 196, 215);
+}
+
+.page {
+    /* content: "";
+    background-color: rgb(29, 196, 215);
+    height: 3px;
+    width: 50%; */
+    color: rgb(29, 196, 215);
+}
+
+.logo h1 {
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: rgb(29, 196, 215);
+}
+
+.logo span {
+    background-color: rgba(29, 196, 215, 0.145);
+    border-radius: 5px;
+    padding: 1px 9px;
+}
+
+
+.nav .masuk a {
+    display: block;
+    color: rgb(29, 196, 215);
+    font-size: 12px;
+    border: solid rgb(29, 196, 215) 1px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'open sans', sans-serif;
+    transition: 0.6s;
+}
+
+.nav .masuk a:hover {
+    background-color: rgb(29, 196, 215);
+    color: white;
+}
+
+
+/* CONTENT */
+.content {
+    background-color: black;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content h1 {
+    font-size: 1.6em;
+    letter-spacing: -1px;
+}
+
+.content p {
+    color: #837e7e;
+    font-size: 1em;
+}
+
+.title {
+    padding: 15vh 0 30px 30px;
+}
+
+.list-jurusan {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+content .jurusan {
+    background-color: white;
+    text-align: center;
+    width: 310px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.067);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+content img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+content .list-jurusan h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+content .jurusan a {
+    color: rgb(29, 196, 215);
+    background-color: rgba(29, 196, 215, 0.145);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: 1em;
+    margin-bottom: 50px;
+    display: block;
+    width: 110px;
+    margin: auto;
+}
+
+content .jurusan-9, .jurusan-10, .jurusan-11 {
+    align-items: left;
+}
+
+
+/* FOOTER */
+footer .container1 {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: white;
+    padding: 50px 0;
+    margin-top: 10vh;
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+    border-top: rgba(51, 51, 51, 0.126) solid 2px;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(29, 196, 215);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a{
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #333;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: rgb(29, 196, 215);
+}
+
+.choices {
+    font-weight: 600;
+}
+
+
+footer .sosmed {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.footer .sosmed img {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgba(29, 196, 215, 0.456);
+    
+}
+/* .product-choice a:hover {
+    
+} */
+
+.copyright {
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    margin-top: 5px;
+    padding: 10px 0;
+}
+
+.copyright p {
+    font-weight: 600;
+}
+
+/* RESPONSIVE BREAK POINT */
+@media (max-width: 867px) {
+    .nav {
+        display: grid;
+        grid-template-areas: 
+        'logo masuk'
+        'nav nav';
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.174);
+    }
+
+    .menu {
+        grid-area: nav;
+        order: 1;
+        margin: auto;
+        left: 10px;
+    }
+
+    .logo {
+        grid-area: logo;
+        margin: auto;
+    }
+
+    .masuk {
+        grid-area: masuk;
+        margin: auto;
+    }}
